@@ -1,0 +1,77 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    overflow: hidden;
+}
+html {
+	font-size: 62.5%;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+
+/* Hero Section */
+
+#hero {
+    background-image: url(https://img.freepik.com/free-vector/flat-dental-care-concept_23-2148984320.jpg?w=900&t=st=1680477015~exp=1680477615~hmac=791eb576442e49767cb4a9406083e4e10164c9821965c69f3c6b6b616b64f629);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#hero .hero-container {
+    margin-bottom: 64px;
+    padding: 20px 40px;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    background: transparent;
+
+    animation: text_reveal_background 3s ease forwards;
+
+}
+#hero .hero-container h1 {
+    color: transparent;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    line-height: 8rem;
+
+    animation: text_reveal_name 3s ease forwards;
+}
+#hero .hero-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    background: rgb(11,5,116);
+    background: linear-gradient(90deg, rgba(11,5,116,0.6302170526413691) 0%, rgba(38,38,105,0.2884803579634979) 35%, rgba(0,212,255,0.3781162123052346) 100%);    
+}
+
+/* End Hero Section */
+
+
+@keyframes text_reveal_background {
+	100% {
+		background: rgb(222,222,227);
+        background: linear-gradient(90deg, rgba(222,222,227,0.22405458765537467) 0%, rgba(222,222,227,0.2520657921371674) 100%);    
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: rgb(37, 0, 147);
+	}
+}
