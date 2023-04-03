@@ -297,6 +297,55 @@ span {
 
 /* End Contact Section */
 
+/* Footer */
+
+#footer .footer-container {
+    background-image: linear-gradient(60deg, rgb(41, 50, 60) 0%, rgb(72, 85, 99) 100%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+}
+#footer .footer-container .schedule {
+    margin: 20px;
+}
+#footer .footer-container .schedule p {
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    line-height: 2rem;
+}
+#footer .footer-container .social-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+#footer .footer-container .social-icons .social-item {
+    width: 44px;
+    margin: 0 16px;
+}
+#footer .footer-container .social-icons .social-item a {
+    width: 100%;
+}
+#footer .footer-container .social-icons .social-item a img {
+    width: 100%;
+    filter: grayscale(1);
+}
+#footer .footer-container .social-icons .social-item:hover a img {
+    filter: grayscale(0);
+}
+#footer .footer-container p {
+    color: white;
+}
+
+/* End Fotter */
+
 @keyframes text_reveal_background {
 	100% {
 		background: rgb(222,222,227);
