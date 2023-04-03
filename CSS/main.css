@@ -11,6 +11,7 @@ html {
 }
 a {
 	text-decoration: none;
+    cursor: pointer;
 }
 img {
     overflow: hidden;
@@ -207,6 +208,7 @@ span {
     text-transform: uppercase;
     letter-spacing: 1rem;
     margin-bottom: 24px;
+    color: var(--blue);
 }
 #about .about-container .col-right p {
     font-size: 1.8rem;
@@ -214,6 +216,86 @@ span {
 }
 
 /* End About Section */
+
+/* Contact Section */
+
+#contact .contact-container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 44px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#contact .contact-container .contact-map {
+    width: 80%;
+    height: 400px;
+}
+#contact .contact-container .contact-map iframe {
+    width: 100%;
+    height: 100%;
+    padding-left: 44px;
+}
+#contact .contact-container .contact-info {
+    width: 50%;
+    margin: 24px;
+    padding-left: 44px;
+}
+#contact .contact-container .contact-info .contact-info-item {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 8px;
+    border-bottom: .1rem solid var(--blue);
+}
+#contact .contact-container .contact-info .contact-info-item:nth-child(2) {
+    margin-top: 12px;
+}
+#contact .contact-container .contact-info .contact-info-item:nth-child(3) {
+    margin-top: 12px;
+    border-bottom: 0;
+}
+#contact .contact-container .contact-info .contact-info-item .contact-info-item-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#contact .contact-container .contact-info .contact-info-item .contact-info-item-image img {
+    width: 60px;
+    margin-bottom: 8px;
+}
+#contact .contact-container .contact-info .contact-info-item .contact-info-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#contact .contact-container .contact-info .contact-info-item .contact-info-item-info h3 {
+    font-size: 2.2rem;
+    margin-bottom: 4px;
+}
+#contact .contact-container .contact-info .contact-info-item .contact-info-item-info p {
+    font-size: 1.8rem;
+}
+#contact .contact-container .contact-info .contact-info-item:nth-child(3) .contact-info-item-info h3 {
+    margin-bottom: 8px;
+}
+#contact .contact-container .contact-info .contact-info-item .contact-info-item-info p a {
+    color: black;
+    padding: 4px 8px;
+    border: .1rem solid var(--blue);
+}
+#contact .contact-container .contact-info .contact-info-item:nth-child(3) .contact-info-item-info p a:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+/* End Contact Section */
 
 @keyframes text_reveal_background {
 	100% {
