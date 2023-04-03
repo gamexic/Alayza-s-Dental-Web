@@ -3,7 +3,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-    overflow: hidden;
 }
 html {
 	font-size: 62.5%;
@@ -12,6 +11,9 @@ html {
 }
 a {
 	text-decoration: none;
+}
+img {
+    overflow: hidden;
 }
 
 /* Hero Section */
@@ -22,22 +24,25 @@ a {
 	background-position: top center;
 	position: relative;
 	z-index: 1;
+}
+#hero .hero-container {
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    background: transparent;
     height: 90vh;
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
-#hero .hero-container {
+#hero .hero-container div {
     margin-bottom: 64px;
     padding: 20px 40px;
-    display: flex;
-    text-align: center;
     border-radius: 10px;
     background: transparent;
 
     animation: text_reveal_background 3s ease forwards;
-
 }
 #hero .hero-container h1 {
     color: transparent;
@@ -48,7 +53,7 @@ a {
 
     animation: text_reveal_name 3s ease forwards;
 }
-#hero .hero-container::after {
+#hero::after {
     content: '';
     position: absolute;
     left: 0;
@@ -63,6 +68,24 @@ a {
 
 /* End Hero Section */
 
+
+/* Services Section */
+
+#services {
+    background-color: white;
+}
+
+#services .services-container {
+    max-width: 1200px;
+    height: auto;
+    margin: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Services Section */
 
 @keyframes text_reveal_background {
 	100% {
