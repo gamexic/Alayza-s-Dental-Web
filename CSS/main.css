@@ -15,6 +15,9 @@ a {
 img {
     overflow: hidden;
 }
+span {
+    color: var(--blue);
+}
 :root {
     --blue: rgb(37, 0, 147);
 }
@@ -102,7 +105,7 @@ img {
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 900;
-    letter-spacing: .1rem;
+    letter-spacing: 1rem;
     margin-bottom: 20px;
 }
 #services .services-container .services-top p {
@@ -152,6 +155,9 @@ img {
     width: 100%;
     border-radius: 1rem;
 }
+#services .services-container .services-bottom .services-item:hover {
+    transform: scale(1.1);
+}
 #services .services-container .services-bottom .services-item h2 {
     color: white;
     font-size: 3.5rem;
@@ -163,8 +169,51 @@ img {
     color: white;
 }
 
-
 /* End Services Section */
+
+
+/* About Section */
+
+#about .about-container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 44px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#about .about-container .col-left {
+    width: 30%;
+}
+#about .about-container .col-left .about-image {
+    width: 100%;
+    padding: 20px;
+    border: 1rem solid var(--blue);
+    border-radius: 1rem;
+    margin: 24px;
+}
+#about .about-container .col-left .about-image img {
+    width: 100%;
+    height: 100%;
+}
+#about .about-container .col-right {
+    margin: 44px 60px;
+    width: 50%;
+}
+#about .about-container .col-right h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-bottom: 24px;
+}
+#about .about-container .col-right p {
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+}
+
+/* End About Section */
 
 @keyframes text_reveal_background {
 	100% {
