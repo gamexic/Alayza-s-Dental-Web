@@ -15,6 +15,9 @@ a {
 img {
     overflow: hidden;
 }
+:root {
+    --blue: rgb(37, 0, 147);
+}
 
 /* Hero Section */
 
@@ -74,16 +77,92 @@ img {
 #services {
     background-color: white;
 }
-
 #services .services-container {
+    width: 100%;
     max-width: 1200px;
     height: auto;
-    margin: 52px;
+    margin: 44px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+#services .services-container .services-top {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 44px;
+}
+#services .services-container .services-top h1 {
+    color: var(--blue);
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    margin-bottom: 20px;
+}
+#services .services-container .services-top p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+#services .services-container .services-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+#services .services-container .services-bottom .services-item {
+    width: 25%;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 1rem;
+    background-image: url(https://img.freepik.com/premium-vector/hand-drawn-stomatology-set_160308-249.jpg);
+    background-size: cover;
+	background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#services .services-container .services-bottom .services-item::after {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #4c8ad2 0%, #0b57a9 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#services .services-container .services-bottom .services-item .image {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+#services .services-container .services-bottom .services-item img {
+    width: 100%;
+    border-radius: 1rem;
+}
+#services .services-container .services-bottom .services-item h2 {
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
+}
+#services .services-container .services-bottom .services-item p {
+    font-size: 1.8rem;
+    color: white;
+}
+
 
 /* End Services Section */
 
@@ -95,6 +174,6 @@ img {
 }
 @keyframes text_reveal_name {
 	100% {
-		color: rgb(37, 0, 147);
+		color: var(--blue);
 	}
 }
