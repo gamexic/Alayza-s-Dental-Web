@@ -123,6 +123,7 @@ span {
 }
 #services .services-container .services-bottom .services-item {
     width: 25%;
+    height: 550px;
     margin: 24px;
     display: flex;
     flex-direction: column;
@@ -164,6 +165,12 @@ span {
     font-size: 3.5rem;
     letter-spacing: .1rem;
     margin-bottom: 2rem;
+}
+#services .services-container .services-bottom .services-item h2:nth-child(2) {
+    font-size: 3.2rem;
+}
+#services .services-container .services-bottom .services-item:nth-child(3) h2 {
+    line-height: 2.8rem;
 }
 #services .services-container .services-bottom .services-item p {
     font-size: 1.8rem;
