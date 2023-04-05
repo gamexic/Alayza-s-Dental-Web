@@ -120,7 +120,6 @@ span {
 	z-index: 100;
 	cursor: pointer;
 	transform: scale(0.8);
-	margin-right: 20px;
 }
 #header .hamburger:after {
 	position: absolute;
@@ -380,16 +379,20 @@ span {
 #contact .contact-container .contact-map {
     width: 80%;
     height: 400px;
+    padding-left: 44px;
 }
 #contact .contact-container .contact-map iframe {
     width: 100%;
     height: 100%;
-    padding-left: 44px;
 }
 #contact .contact-container .contact-info {
     width: 50%;
     margin: 24px;
     padding-left: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #contact .contact-container .contact-info .contact-info-item {
     width: 90%;
@@ -422,6 +425,7 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    text-align: center;
 }
 #contact .contact-container .contact-info .contact-info-item .contact-info-item-info h3 {
     font-size: 2.2rem;
@@ -544,7 +548,7 @@ span {
     /* About Section */
 
     #about .about-container .col-left {
-        width: 50%;
+        width: 80%;
     }
     #about .about-container .col-left .about-image {
         margin: 24px 0;
@@ -567,6 +571,12 @@ span {
 
     #contact .contact-container {
         flex-direction: column;
+    }
+    #contact .contact-container .contact-map {
+        padding-left: 0;
+    }
+    #contact .contact-container .contact-info {
+        padding-left: 0;
     }
     #contact .contact-container .contact-info .contact-info-item {
         align-items: center;
@@ -591,6 +601,14 @@ span {
     }
 
     /* End Services Section */
+
+    /* About Section */
+
+    #about .about-container .col-left {
+        width: 50%;
+    }
+
+    /* End About Section */
 
 }
 
@@ -647,6 +665,12 @@ span {
     #contact .contact-container {
         flex-direction: row;
     }
+    #contact .contact-container .contact-map {
+        padding-left: 44px;
+    }
+    #contact .contact-container .contact-info {
+        padding-left: 44px;
+    }
     #contact .contact-container .contact-info .contact-info-item {
         align-items: flex-start;
     }
@@ -655,6 +679,7 @@ span {
     }
     #contact .contact-container .contact-info .contact-info-item .contact-info-item-info {
         align-items: flex-start;
+        text-align: left;
     }
 
     /* End Contact Section */
